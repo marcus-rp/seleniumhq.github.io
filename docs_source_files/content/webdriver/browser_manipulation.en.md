@@ -924,13 +924,13 @@ const height1 = rect.height;
   {{< / code-panel >}}
   {{< code-panel language="kotlin" >}}
 //Access each dimension individually
-val width = driver.manage().window().getSize().getWidth()
-val height = driver.manage().window().getSize().getHeight()
+val width = driver.manage().window().size.width
+val height = driver.manage().window().size.height
 
 //Or store the dimensions and query them later
-val size = driver.manage().window().getSize()
-val width1 = size.getWidth()
-val height1 = size.getHeight()
+val size = driver.manage().window().size
+val width1 = size.width
+val height1 = size.height
   {{< / code-panel >}}
 {{< / code-tab >}}
 
@@ -1001,7 +1001,7 @@ val y = driver.manage().window().position.y
 // Or store the dimensions and query them later
 val position = driver.manage().window().position
 val x1 = position.x
-int y1 = position.y
+val y1 = position.y
   
   {{< / code-panel >}}
 {{< / code-tab >}}
