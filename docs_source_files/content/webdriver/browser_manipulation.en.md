@@ -724,7 +724,7 @@ await driver.findElement(By.css('button')).click();
   {{< / code-panel >}}
   {{< code-panel language="kotlin" >}}
 //Store the web element
-WebElement iframe = driver.findElement(By.cssSelector("#modal>iframe"))
+val iframe = driver.findElement(By.cssSelector("#modal>iframe"))
 
 //Switch to the frame
 driver.switchTo().frame(iframe)
