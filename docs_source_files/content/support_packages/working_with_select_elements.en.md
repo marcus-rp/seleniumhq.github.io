@@ -54,7 +54,7 @@ select_object = Select(select_element)
   {{< / code-panel >}}
   {{< code-panel language="kotlin" >}}
 val selectElement = driver.findElement(By.id("selectElementID"))
-val selectObject = new Select(selectElement)
+val selectObject = Select(selectElement)
   {{< / code-panel >}}
 {{< / code-tab >}}
 
